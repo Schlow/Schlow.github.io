@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs title="BookCarousel" height="250" scaling="false" />
+    <UserPref name="book_list" display_name="Book_List" default_value="" />
+    <Content type="html">
+    <![CDATA[
+        <style>
+            .btn{
+                border: 0;
+                background-color: transparent;
+                margin-top: 95px;
+                font-size: 2em;
+                color: white;
+            }
+            .left{
+                float: left;
+                margin-left: 10px;
+            }
+            .left:disabled{
+                color: transparent;
+            }
+            .right:disabled{
+                color: transparent;
+            }
+            .right{
+                float: right;
+                margin-right: 10px;
+            }
+
+            .eg-container{
+                background-color: #2378b5;
+                text-align:center;
+            }
+            .book-cover{
+                padding: 10;
+                margin: 10;
+            }
+
+        </style>
+
+        <div class="eg-container">
+            <button onClick="left()" disabled class="btn left"> < </button>
+            <button onClick="right()" class="btn right"> > </button>
+            <a href="" target="_blank" class="link"> <img class="book-cover" src = "" /></a>
+            <a href="" target="_blank" class="link"> <img class="book-cover" src = "" /></a>
+            <a href="" target="_blank" class="link"> <img class="book-cover" src = "" /></a>
+            <a href="" target="_blank" class="link"> <img class="book-cover" src = "" /></a>
+        </div>
+        <script type="text/javascript">
+            var prefs = new gadgets.Prefs();
+            var booklist = prefs.getString("book_list");
+            //var booklist = ` 2294886 , 2301801, 2245227, 2294886, 2294886 , 2301801, 2245227, 2294886`;
+            var bookArray = booklist.split(',');
+            var height = 250;
+            var index = 0;
+            var max_index = 4;
+            updateForSize();
+            render();
+            function render(){
+                document.querySelector('.left').disabled = false;
+                document.querySelector('.right').disabled = false;
+                if(index == 0){
+                    document.querySelector('.left').disabled = true;
+                }else if(index >= bookArray.length-max_index){
+                    document.querySelector('.right').disabled = true;
+                }
+                var container = document.querySelector('.eg-container');
+                container.height = height;
+                //var booklist = ['2294886', '2301801', '2245227']
+                var images = document.querySelectorAll('.book-cover');
+                var links = document.querySelectorAll('.link');
+                for(var i = 0; i < images.length; i++){
+                    var image = images[i];
+                    image.src = 'https://juniata.sparkpa.org/opac/extras/ac/jacket/medium/r/' + bookArray[index + i].trim();
+                    links[i].href = 'https://juniata.sparkpa.org/eg/opac/record/' + bookArray[index + i].trim()
+                }
+            }
+            function left(){
+                if(index == 0){
+                    return;
+                }
+                index -= 1;
+                render();
+            }
+            function right(){
+                if(bookArray.length-max_index <= index){
+                    return;
+                }
+                index += 1;
+                render();
+            }
+            function updateForSize(){
+                var container = document.querySelector('.eg-container');
+                var width = container.getBoundingClientRect().width;
+                if(width < 400){ document.querySelector('.link').remove(); max_index -= 1; }
+                if(width < 600){ document.querySelector('.link').remove(); max_index -= 1; }
+                if(width < 800){ document.querySelector('.link').remove(); max_index -= 1; }
+            }
+        </script>
+    ]]>
+    </Content>
+</Module>
+

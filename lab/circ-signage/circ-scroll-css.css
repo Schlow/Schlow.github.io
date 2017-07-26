@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Montserrat, Sans-serif;
+  src: url('http://fonts.googleapis.com/css?family=Montserrat');
+}
+
+#container {
+  margin:0;padding:0;
+  width:160px;
+  height:500px;
+  font-family: Montserrat, Geneva, Arial, sans-serif;
+  font-size:22px;
+}
+
+#header {
+  margin:0;
+  padding:10px 5px 10px;
+  font-color:#FFFFFF;
+}
+  
+#header .feed_title {
+  margin:0;
+  padding:0;
+  text-align: center;
+  font-weight:bold;
+  font-size: 28pt;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+            -1px 1px 0 #000, 3px 3px 5px #333;
+}
+#header .feed_title a:link {
+  color:#FFFFFF;
+  text-decoration:none;
+}
+
+#header .feed_title a:visited {
+  color:#FFFFFF;
+  text-decoration:none;
+}
+
+#header .feed_title a:hover {
+  color:#FFFFFF;
+  text-decoration:underline;
+}
+
+#header .feed_title a:active {
+  color:#FFFFFF;
+  text-decoration:none;
+}
+
+#content {
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+	
+#content .feed_item {
+  margin: 0;
+  padding: 10px 30px 4px 10px;
+}
+
+#content .feed_item_title { 
+  margin:1px 0 1px 13px;
+  padding:1px 0 1px 3px;
+  color: #f26c4f;
+  text-decoration:none;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  clear: both;
+
+}
+
+#content .feed_item_title a:link { 
+  color: #f26c4f;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+#content .feed_item_title a:visited { 
+  color: #f26c4f;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+#content .field-name-title { 
+  visibility:hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#content .feed_item_description {
+  margin:-20px 0 0 12px;
+  padding:0 0 0 3px;
+  color:#FFFFFF;
+  line-height:135%;
+  clear: both;
+}
+
+.field-name-field-picture img {
+  border: 5px solid white;
+  margin:0 12px 30px;
+  height: auto;
+  width: 130px;
+  float: left;
+}
+.field-name-body {
+  margin-top: -28px;
+}

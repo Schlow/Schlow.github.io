@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Search CCFPL Holdings</title>
+    <style>
+    body {
+	  background-color: #cde;
+      font-family: verdana, "lucida console", sans-serif;
+      font-size: 9pt;
+      color: #000;
+    }
+    a {
+      color: #000;
+      }
+    a visited {
+      color: #eee;
+      }
+    #form {
+      width: 196px;
+      }
+	#title {
+      font-weight: bold;
+	  }
+    #account {
+      font-size: .8em;
+      float: right;
+      padding-top: 2px;
+      padding-right: 20px;
+      }
+    </style></head>
+  <body>
+    <div id="form"><FORM name=search method=get action="http://search.ccfpl.org/ipac20/ipac.jsp" target="blank">
+      <INPUT name=menu value=search type=hidden>
+      <INPUT name=aspect  value=basic_search type=hidden>
+      <INPUT name=index value=".GW" type=hidden>
+      <div id="title">Search the catalog</div>
+      <div id="form"><INPUT name=term size=20 maxsize=100>&nbsp;<INPUT type=image src="http://search.ccfpl.org/hipres/images/b-go-red.gif" alt="Search" align="absbottom"></div>
+      <div id="account"><a href="http://search.ccfpl.org/ipac20/ipac.jsp?menu=account" target="_parent" title="Review account info, requests, fines, etc.">My Account</a></div></FORM></div></body></html>

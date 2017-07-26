@@ -1,0 +1,47 @@
+<head>
+<style>
+.inputbar{
+    font-size: 1em;
+    margin: 0;
+    height: 2.8em;
+    border-radius: 0;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #333;
+    display: inline-block;
+    margin: 0 0 1em 0;
+    padding: 0.5em;
+    height: 2.4375em;
+}
+.btnsearch{
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 1.25em;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5625em;
+    padding-left: 1em;
+    font-size: .9em;
+    background-color: #1c6e25;
+}
+</style>
+</head>
+<body>
+<div>
+  <form method="get" action="http://juniata.SparkPA.org/eg/opac/results" target="_blank">
+    <input type="hidden" name="fi:item_type" class="inputbar">
+    <input type="text" name="query" size="85" maxlength="255" value="" class="inputbar">
+    <input type="hidden" name="qtype" value="keyword">
+    <input type="hidden" name="locg" value="189">
+    <input type="submit" value="Search Library Catalog" class="btnsearch">
+  </form>
+</div>
+</body>
