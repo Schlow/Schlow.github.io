@@ -3,7 +3,7 @@
   src: url('http://fonts.googleapis.com/css?family=Montserrat');
 }
 
-#container {
+#fw-container {
   margin:0;padding:0;
   width:160px;
   height:500px;
@@ -17,7 +17,7 @@
   font-color:#FFFFFF;
 }
   
-#header .feed_title {
+#header .fw-feed-title {
   margin:0;
   padding:0;
   text-align: center;
@@ -26,22 +26,22 @@
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
             -1px 1px 0 #000, 3px 3px 5px #333;
 }
-#header .feed_title a:link {
+#header .fw-feed-title a:link {
   color:#FFFFFF;
   text-decoration:none;
 }
 
-#header .feed_title a:visited {
+#header .fw-feed-title a:visited {
   color:#FFFFFF;
   text-decoration:none;
 }
 
-#header .feed_title a:hover {
+#header .fw-feed-title a:hover {
   color:#FFFFFF;
   text-decoration:underline;
 }
 
-#header .feed_title a:active {
+#header .fw-feed-title a:active {
   color:#FFFFFF;
   text-decoration:none;
 }
@@ -52,12 +52,12 @@
   overflow: hidden;
 }
 	
-#content .feed_item {
+#content .fw-feed-item {
   margin: 0;
   padding: 10px 30px 4px 10px;
 }
 
-#content .feed_item_title { 
+#content .fw-feed-item-title { 
   margin:1px 0 1px 13px;
   padding:1px 0 1px 3px;
   color: #f26c4f;
@@ -69,13 +69,13 @@
 
 }
 
-#content .feed_item_title a:link { 
+#content .fw-feed-item-title a:link { 
   color: #f26c4f;
   text-decoration:none;
   font-weight: bold;
 }
 
-#content .feed_item_title a:visited { 
+#content .fw-feed-item-title a:visited { 
   color: #f26c4f;
   text-decoration:none;
   font-weight: bold;
@@ -88,7 +88,7 @@
   padding: 0;
 }
 
-#content .feed_item_description {
+#content .fw-feed-item-description {
   margin:-20px 0 0 12px;
   padding:0 0 0 3px;
   color:#FFFFFF;
