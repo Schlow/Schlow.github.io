@@ -9,6 +9,7 @@
   height:500px;
   font-family: Montserrat, Geneva, Arial, sans-serif;
   font-size:22px;
+  overflow: hidden;
 }
 
 #header {
@@ -46,18 +47,12 @@
   text-decoration:none;
 }
 
-#content {
-  margin:0;
-  padding:0;
-  overflow: hidden;
-}
-	
-#content .fw-feed-item {
+#fw-container .fw-feed-item {
   margin: 0;
   padding: 10px 30px 4px 10px;
 }
 
-#content .fw-feed-item-title { 
+#fw-container .fw-feed-item-title { 
   margin:1px 0 1px 13px;
   padding:1px 0 1px 3px;
   color: #f26c4f;
@@ -69,26 +64,26 @@
 
 }
 
-#content .fw-feed-item-title a:link { 
+#fw-container .fw-feed-item-title a:link { 
   color: #f26c4f;
   text-decoration:none;
   font-weight: bold;
 }
 
-#content .fw-feed-item-title a:visited { 
+#fw-container .fw-feed-item-title a:visited { 
   color: #f26c4f;
   text-decoration:none;
   font-weight: bold;
 }
 
-#content .field-name-title { 
+#fw-container .field-name-title { 
   visibility:hidden;
   height: 0;
   margin: 0;
   padding: 0;
 }
 
-#content .fw-feed-item-description {
+#fw-container .fw-feed-item-description {
   margin:-20px 0 0 12px;
   padding:0 0 0 3px;
   color:#FFFFFF;
