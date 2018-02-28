@@ -74,7 +74,7 @@
   font-weight: bold;
 }
 
-#fw-container .field-name-title { 
+#fw-container .fw-feed-item-title { 
   visibility:hidden;
   height: 0;
   margin: 0;
