@@ -135,71 +135,7 @@ a#AD:active {
 									
 									<tr>
 									<td width=100% valign="top">
-										<center>
-																				<script type="text/javascript">
-function GoGoodSearch_1()
-{
-	var charityid = 875308;
-	var siteURL = "schlowlibrary.org";
-	var openNewWindow = false;
-	var baseurl = "http://www.goodsearch.com/Search.aspx";
-	var keywordsbox = document.getElementById("goodsearch_keywords_1");
-	if (typeof keywordsbox != "undefined")
-	{
-		var keywords = escape(keywordsbox.value);
-		var url = baseurl + "?Keywords=" + keywords;
-		if (charityid > 0)
-			url += "&CharityID=" + charityid;
-		url += "&Partner=goodsearch_syn";
-		url += "&typetag=" + escape(siteURL);
-		if (openNewWindow)
-			window.open(url,'SearchResults','height=700,width=900,location=1,status=1,toolbar=1,scrollbars=1,resizable=1');
-		else
-			window.location.href = url;
-	}
-}
-function CatchEnter_1(e)
-{
-	var key1 = "13";
-	var x = "";
-	if (document.all)
-	{
-		var evnt = window.event;
-		x = evnt.keyCode;
-	}
-	else
-		x = e.keyCode;
-	if (x == key1)
-	{
-		document.getElementById("goodsearch_submit_1").click();
-		return false;
-	}
-	else
-		return true;
-}
-</script>
-<div style="padding:5px 5px 2px 5px; text-align:center; border: solid 1px #CCCCCC; width:300px;">
-<label for="goodsearch_keywords_1" style="display:none;">GoodSearch keywords to search for</label>
-<input
-type="text"
-name="goodsearch_keywords_1"
-id="goodsearch_keywords_1"
-onkeydown="return CatchEnter_1(event);"
-style="width:230px;background-image:url('http://www.goodsearch.com/_gfx/title_yahoo_background.gif');background-repeat:no-repeat;margin:2px 0px 4px 0px;"
-onclick="this.style.backgroundImage='url(http://www.goodsearch.com/_gfx/spacer.gif)';"
-onfocus="this.style.backgroundImage='url(http://www.goodsearch.com/_gfx/spacer.gif)';"
-/>
-<input
-type="button"
-name="goodsearch_submit_1"
-id="goodsearch_submit_1"
-value="Search"
-onclick="GoGoodSearch_1();"
-style="margin:2px 0px 4px 0px;font-family:Arial,Helvetica;font-size:11px;"
-/>
-</div>
-Using this search benefits Schlow Library
-										</center>
+										
 									</td>
 									</tr>
 									<tr>
